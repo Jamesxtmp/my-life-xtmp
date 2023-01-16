@@ -1,15 +1,21 @@
 import { Outlet } from "react-router-dom";
 
 import UpperVisualizer from "./UpperVisualizer";
-import NavState from "./NavState";
+import CenterInformation from "./CenterInformation"
 
 function RootLayout() {
     return (
-        <>
-            <UpperVisualizer/>
-            <NavState/>
-            <Outlet/>
-        </>
+        <div className="root-layout">
+            <div className="layout-upper">
+                <UpperVisualizer />
+            </div>
+            <div className="layout-center">
+                <CenterInformation />
+            </div>
+            <div className="layout-outlet">
+                <Outlet />
+            </div>
+        </div>
     );
 }
 

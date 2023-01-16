@@ -6,4 +6,4 @@ function UpperVisualizer() {
     )
 }
 
-export default UpperVisualizer;
+export default UpperVisualizer
