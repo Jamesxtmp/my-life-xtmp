@@ -1,7 +1,9 @@
+import Default from "./CenterInformationViews/Default"
+
 function CenterInformation() {
     return (
         <>
-            CenterInformation
+            <Default/>
         </>
     )
 }

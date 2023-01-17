@@ -1,2 +1,8 @@
-@import '/src/components/UpperVisualizer.css';
+/*Components*/
 @import '/src/components/RootLayout.css';
+@import '/src/components/UpperVisualiserViews/Default.css';
+@import '/src/components/CenterInformationViews/Default.css';
+@import '/src/components/OutletComponents/PapelPreviews/RecordatorioPapel.css';
+
+/*Pages*/
+@import '/src/pages/Recordatorios.css'

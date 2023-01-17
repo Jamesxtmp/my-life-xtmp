@@ -1,0 +1,38 @@
+.recordatorio-papel{
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 4px 0;
+    box-shadow: inset 4px -2px 0px 0px violet;
+    margin: 8px 0;
+}
+.title-zone-recordatorio{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 4px 0 4px 8px;
+}
+.time-zone-recordatorio{
+    display: flex;
+    width: 25%;
+}
+.dia-recordatorio{
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+.sem-hora-recordatorio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+}
+.sem-recordatorio{
+    font-size: 0.8;
+    height: 50%;
+}
+.hora-recordatorio{
+    font-size: 0.7em;
+    height: 50%;
+}

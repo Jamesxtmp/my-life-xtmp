@@ -1,0 +1,40 @@
+.l-elements,
+.c-elements,
+.r-elements {
+    height: 100%;
+}
+
+.icon-options-center,
+.icon-route-center,
+.icon-traslate-center,
+.icon-search-center {
+    width: 22px;
+    filter: invert(1);
+}
+
+
+.l-elements {
+    display: flex;
+    align-items: center;
+}
+
+.icon-options-center {
+    margin: 0 12px;
+}
+
+.icon-route-center {
+    margin: 0 0px 0 10px;
+}
+
+.route-center {
+    margin: 0 8px 0 8px;
+}
+
+
+
+.r-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+}

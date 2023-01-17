@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Calibri;
+    --background-1: #222;
+    --background-2: #333;
+    color: white;
 }
 ul{
     list-style: none;
@@ -12,4 +16,14 @@ a{
 }
 body{
     overflow: hidden;
+    background-color: var(--background-1);
+}
+h2{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1.1em;
+}
+.direccion-carpet{
+    font-size: 0.7em;
 }
