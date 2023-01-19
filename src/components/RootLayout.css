@@ -1,5 +1,7 @@
 .root-layout{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 .layout-upper{
     display: flex;
@@ -15,4 +17,12 @@
 }
 .layout-outlet{
     width: 100%;
+    height: calc(100vh - 27vh - 45px - 56px);
+    overflow-y: scroll;
+}
+.layout-footer{
+    height: 56px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: var(--background-2);
 }

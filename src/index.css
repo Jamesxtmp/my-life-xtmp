@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,23 +7,44 @@
     --background-2: #333;
     color: white;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-body{
+
+html,
+body {
     overflow: hidden;
     background-color: var(--background-1);
 }
-h2{
+
+h2 {
     font-size: 1.2em;
 }
-h3{
+
+h3 {
     font-size: 1.1em;
 }
-.direccion-carpet{
+
+.direccion-carpet {
     font-size: 0.7em;
+}
+
+::-webkit-scrollbar {
+    width: 5px
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-1);
+    border-radius: 8px
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-2);
+    border-radius: 8px
 }
