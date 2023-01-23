@@ -1,26 +1,44 @@
-.root-layout{
+.root-layout {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
-.layout-upper{
+
+.layout-upper-max {
+    display: flex;
+    height: calc(100vh - 20vh - 45px - 56px);
+    width: 100%;
+    transition: height 500ms;
+}
+.layout-upper-min {
     display: flex;
     height: 27vh;
     width: 100%;
+    transition: height 500ms;
 }
-.layout-center{
+
+.layout-center {
     display: flex;
     justify-content: space-between;
     background-color: var(--background-2);
     width: 100%;
     height: 45px;
 }
-.layout-outlet{
+
+.layout-outlet-max {
     width: 100%;
     height: calc(100vh - 27vh - 45px - 56px);
     overflow-y: scroll;
+    transition: height 500ms;
 }
-.layout-footer{
+.layout-outlet-min {
+    width: 100%;
+    height: 20vh;
+    overflow-y: scroll;
+    transition: height 500ms;
+}
+
+.layout-footer {
     height: 56px;
     font-size: 1.2em;
     text-align: center;

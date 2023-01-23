@@ -1,4 +1,8 @@
+import useZustand from "../../storage/zustandStorage";
+
 function Default() {
+    const prominentLayout = useZustand((state) => state.prominentLayout)
+    const setProminentLayout = useZustand((state) => state.setProminentLayout)
     return (
         <>
             <div className="l-elements">
@@ -14,11 +18,15 @@ function Default() {
             </div>
 
             <div className="r-elements">
-                <div className="icon-traslate-center">
-                    <img src={`/src/assets/${'chevron-up-solid.svg'}`} alt="" />
-                </div>
+                <button
+                    onClick={() => setProminentLayout()}
+                    className={`icon-traslate-center`}>
+                    <img 
+                        className={`icon-traslate-center-img${prominentLayout ? '' : '-rotate'}`}
+                        src={`/src/assets/${'chevron-up-solid.svg'}`} alt="" />
+                </button>
                 <div className="icon-search-center">
-                    <img src="/src/assets/magnifying-glass-solid.svg" alt="" />
+                    <img className="icon-search-center" src="/src/assets/magnifying-glass-solid.svg" alt="" />
                 </div>
             </div>
         </>

@@ -4,14 +4,21 @@
     height: 100%;
 }
 
-.icon-options-center,
-.icon-route-center,
-.icon-traslate-center,
-.icon-search-center {
+.icon-options-center img,
+.icon-route-center img,
+.icon-traslate-center-img,
+.icon-search-center img {
     width: 22px;
     filter: invert(1);
+    transform: rotate(0);
+    transition: transform 500ms;
 }
-
+.icon-traslate-center-img-rotate{
+    width: 22px;
+    filter: invert(1);
+    transform: rotate(180deg);
+    transition: transform 500ms;
+}
 
 .l-elements {
     display: flex;
@@ -25,7 +32,12 @@
 .icon-route-center {
     margin: 0 0px 0 10px;
 }
-
+.icon-traslate-center{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 40px;
+}
 .route-center {
     margin: 0 8px 0 8px;
 }
