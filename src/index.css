@@ -19,7 +19,7 @@ a {
 
 html,
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--background-1);
 }
 

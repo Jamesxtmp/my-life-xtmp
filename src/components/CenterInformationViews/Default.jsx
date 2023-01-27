@@ -21,7 +21,7 @@ function Default() {
                 <button
                     onClick={() => setProminentLayout()}
                     className={`icon-traslate-center`}>
-                    <img 
+                    <img
                         className={`icon-traslate-center-img${prominentLayout ? '' : '-rotate'}`}
                         src={`/src/assets/${'chevron-up-solid.svg'}`} alt="" />
                 </button>

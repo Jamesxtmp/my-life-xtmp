@@ -1,20 +1,19 @@
 .root-layout {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .layout-upper-max {
-    display: flex;
-    height: calc(100vh - 20vh - 45px - 56px);
-    width: 100%;
+    height: 70%;
     transition: height 500ms;
+    display: flex;
 }
+
 .layout-upper-min {
-    display: flex;
-    height: 27vh;
-    width: 100%;
+    height: 30%;
     transition: height 500ms;
+    display: flex;
 }
 
 .layout-center {
@@ -26,21 +25,11 @@
 }
 
 .layout-outlet-max {
-    width: 100%;
-    height: calc(100vh - 27vh - 45px - 56px);
-    overflow-y: scroll;
-    transition: height 500ms;
-}
-.layout-outlet-min {
-    width: 100%;
-    height: 20vh;
-    overflow-y: scroll;
+    height: 70%;
     transition: height 500ms;
 }
 
-.layout-footer {
-    height: 56px;
-    font-size: 1.2em;
-    text-align: center;
-    background-color: var(--background-2);
+.layout-outlet-min {
+    height: 30%;
+    transition: height 500ms;
 }
