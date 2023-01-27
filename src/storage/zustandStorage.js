@@ -3,6 +3,8 @@ import { create } from 'zustand'
 const useZustand = create((set) => ({
   prominentLayout: false,
   setProminentLayout: () => set((state) => ({ prominentLayout: !state.prominentLayout })),
+  lateralMenuActive: true,
+  setLateralMenuActive: () => set((state) => ({ lateralMenuActive: !state.lateralMenuActive })),
   
   
   //default values

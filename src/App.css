@@ -3,6 +3,7 @@
 @import '/src/components/UpperVisualiserViews/Default.css';
 @import '/src/components/CenterInformationViews/Default.css';
 @import '/src/components/OutletComponents/PapelPreviews/RecordatorioPapel.css';
+@import '/src/components/Menus/LateralMenu.css';
 
 /*Pages*/
 @import '/src/pages/Recordatorios.css'

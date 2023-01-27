@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react"
 import UpperVisualizer from "./UpperVisualizer"
 import CenterInformation from "./CenterInformation"
 import useZustand from "../storage/zustandStorage"
+import LateralMenu from "./Menus/LateralMenu"
 
 function RootLayout() {
     const prominentLayout = useZustand((state) => state.prominentLayout)
@@ -17,7 +18,9 @@ function RootLayout() {
     }, []);
     return (
         <div style={{ height: `${window.innerHeight}px` }}
-            className="root-layout">
+            className="root-layout"
+        >
+            <LateralMenu />
             <div className={`layout-upper-${prominentLayout ? 'max' : 'min'}`}>
                 <UpperVisualizer state={'default'} />
             </div>

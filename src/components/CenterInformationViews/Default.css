@@ -32,7 +32,12 @@
 .icon-route-center {
     margin: 0 0px 0 10px;
 }
-.icon-traslate-center{
+/*Botones*/
+.icon-traslate-center,
+.icon-options-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     border: none;
     height: 100%;
@@ -41,8 +46,6 @@
 .route-center {
     margin: 0 8px 0 8px;
 }
-
-
 
 .r-elements {
     display: flex;

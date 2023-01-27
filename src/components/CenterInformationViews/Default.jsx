@@ -3,12 +3,15 @@ import useZustand from "../../storage/zustandStorage";
 function Default() {
     const prominentLayout = useZustand((state) => state.prominentLayout)
     const setProminentLayout = useZustand((state) => state.setProminentLayout)
+    const setLateralMenuActive = useZustand((state) => state.setLateralMenuActive)
     return (
         <>
             <div className="l-elements">
-                <div className="icon-options-center">
+                <button className="icon-options-center"
+                    onClick={() => setLateralMenuActive()}
+                >
                     <img src="/src/assets/bars-solid.svg" alt="" />
-                </div>
+                </button>
                 <div className="icon-route-center">
                     <img src="/src/assets/clock-rotate-left-solid.svg" alt="" />
                 </div>
